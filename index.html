@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/img/meetupLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Meetup Clone</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <nav class="nav-container flex-space-between">
+    
+                <div class="nav-header">
+                    <div class="nav-logo">
+                        <img src="./static/img/meetupLogo.png" alt="Meetup Logo" class="logo">
+                    </div>
+                    <form action="/" class="post">
+                        <input type="search" name="search-events" id="search-events" placeholder="search events.." required autofocus>
+                        <input type="search" name="search-location" id="search-location" placeholder="search location" required>
+                        <button type="submit" class="search-btn"><img src="static/img/search.svg" 
+                            alt="orm seach button" 
+                            class="form-search-icon">
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="nav-footer">
+                    <div class="nav-links">
+                        <a href="#">English</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Log in</a>
+                        <a href="#">Sign up</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    
+
+   <section class="call-to-action">
+
+    <div class="container flex-space-between">
+
+        <div class="info">
+            <h1 class="title">These people platforms - where interest become friends</h1>
+
+            <p class="call-to-action-p-info padding-top-sm padding-bottom-md">Whatever your interest, from hiking and reading to networking and skill sharing, 
+                there are thousands  of people who share it on Meetup. Events are happening every day—sign up to join the fun.
+            </p>
+
+            <button class="call-to-action-btn">Join Meetup</button>
+        </div>
+
+        <div class="img">
+            <img src="./static/img/call-to-action.webp" alt="Join Meetup Image" class="call-to-action-img">
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="events" class="margin-top-lg">
+        <h1>Events near</h1>
+        <div class="container">
+            
+            <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main1.webp" alt="MCR.TEST - Launch Event!" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+        
+
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#" id="event-details" autofocus>
+                       
+                        <img src="./static/img/calender.svg" alt="Calendar Icon" class="event-time">
+            
+                        <span title="Event Details">Wed, Feb 7 · 5:30 PM GMT </span>
+                    </a>
+                </div>
+                
+
+                <div class="footer flex-space-between">
+                    <a href="#">
+                    
+                        <img src="./static/img/white-heavy-check-mark.svg" alt="Check Mark Icon" class="icons">
+                        70 going
+                    </a>
+                    <a href="#">
+                        <img src="./static/img/pricetags-outline.svg" alt="Price Tags Icon" class="icons">
+                        Free
+                    </a>
+                </div>
+                
+             </div>
+
+             <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main2.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main3.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main4.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main5.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="event-card">
+                <div class="header">
+                    <img src="./static/img/main6.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+            
+            
+    </section>
+
+
+    <section id="upcoming-events" class="margin-top-lg">
+        <h1>Upcoming Online Events</h1>
+        <div class="container">
+   
+            <div class="upcoming-event-card">
+                <div class="header">
+                    <img src="./static/img/main7.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="upcoming-event-card">
+                <div class="header">
+                    <img src="./static/img/main8.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="upcoming-event-card">
+                <div class="header">
+                    <img src="./static/img/main9.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+
+             <div class="upcoming-event-card">
+                <div class="header">
+                    <img src="./static/img/main10.webp" alt="" class="src">
+                    <figcaption>
+                        MCR.TEST - Launch Event!
+                    </figcaption>
+                </div>
+                <div class="body">
+                    <p class="host">hosted by: Michael</p>
+                    <a href="#"><img src="./static/img/calender.svg" alt="" srcset="" class="event-time">
+                        Wed, Feb 7 · 5:30 PM GMT
+                    </a>
+                    
+                </div>
+
+                <div class="footer flex-space-between">
+
+                     <a href="#"><img src="./static/img/white-heavy-check-mark.svg" alt="" class="icons">70 going</a>
+                     <a href="#"><img src="./static/img/pricetags-outline.svg" alt="" class="icons">Free</a>
+                 </div>
+             </div>
+           
+          
+        
+            
+            
+    </section>
+
+
+    <article class="margin-top-lg">
+
+        <div class="join-us flex-space-between padding-sm">
+            <div class="info">
+                <h1>Join us</h1>
+                <p class="join-us-info">
+                    People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
+                </p>
+
+                <a href="#">Join Us</a>
+            </div>
+
+            <div class="img">
+                <img src="./static/img/main13.webp" alt="">
+            </div>
+
+        </div>
+    </article>
+
+    <section id="explore-top-categories">
+        <div class="container margin-top-lg">
+            <h1>Explore top categories</h1>
+
+            <div class="flex-items">
+               
+                <div class="flex-item">
+                    <img src="static/img/rocket.svg" alt="" srcset="">
+                    <a href="#">Travel and outdoor</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/entertainment-events-hobbies-film-player.svg" alt="" srcset="">
+                    <a href="#">Hobbies and activites</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/twitter-original.svg" alt="" srcset="">
+                    <a href="#">Social activites</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/soccer-ball.svg" alt="" srcset="">
+                    <a href="#">Sports and Fitness</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/heart-rate.svg" alt="" srcset="">
+                    <a href="#">Health and Wellbeing</a>
+                </div>
+                <div class="flex-item">
+                    <img src="static/img/iphone-phone-mobile-handy.svg" alt="" srcset="">
+                    <a href="#">Technology</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/artist-palette.svg" alt="" srcset="">
+                    <a href="#">Art and Culture</a>
+                </div>
+
+                <div class="flex-item">
+                    <img src="static/img/games.svg" alt="" srcset="">
+                    <a href="#">Games</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-meetup-cities margin-top-lg">
+
+        <div class="container">
+            <div class="header padding-bottom-sm">
+                <h1>Popular cities on Meetup</h1>
+                <p>Looking for fun things to do near you? See what Meetup organizers are planning in cities around the country.</p>
+    
+            </div>
+         
+
+            <div class="cities flex-row">
+                <div class="city">
+                    <img src="./static/img/city1.webp" alt="" srcset="" class="city-img">
+                    <h2>New York</h2>
+                </div>
+                <div class="city">
+                    <img src="./static/img/city2.webp" alt="" srcset="" class="city-img">
+                    <h2>San Fransico</h2>
+                </div>
+                <div class="city">
+                    <img src="./static/img/city3.webp" alt="" srcset="" class="city-img">
+                    <h2>Chicago</h2>
+                </div>
+                <div class="city">
+                    <img src="./static/img/city4.webp" alt="" srcset="" class="city-img">
+                    <h2>Nashville</h2>
+                </div>
+                <div class="city">
+                    <img src="./static/img/city5.webp" alt="" srcset="" class="city-img">
+                    <h2>Miami</h2>
+                </div>
+            </div>
+           
+
+        </div>
+    </section>
+
+
+    <section class="how-meetup-works">
+        <div class="container">
+
+            <div class="header margin-top-lg padding-bottom-sm">
+                <h1>How meetup work</h1>
+            </div>
+
+            <div class="cards flex-space-between">
+
+    
+
+            <div class="card">
+                <div class="header">
+                    <span><img src="static/img/add-one.svg" alt="" srcset=""></span>
+                  
+                </div>
+
+                <div class="body">
+                    <h1>Discover our event group</h1>
+                    <p>See who hosting local events for all things I love it</p>
+
+                    <p class="padding-top-md display-text bold">Search events and group</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="header">
+                    <span><img src="static/img/search.svg" alt="" srcset=""></span>
+                  
+                </div>
+
+                <div class="body">
+                    <h1>Discover our event group</h1>
+                    <p>Create your own group, and draw from a community from million</p>
+
+                    <p class="padding-top-md display-text bold">Start a group</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <section class="friendships margin-top-lg">
+        <div class="container">
+
+            <div class="header">
+                <h1>Friendship are made on meetup</h1>
+                <p>Since 2002, members have used Meetup to make new friends, meet like-minded people, 
+                    spend time on hobbies, and connect with locals over shared interests. Learn how.</p>
+            </div>
+
+            <div class="friends">
+
+            <div class="friendship-card">
+                <div class="header">
+                    <img src="./static/img/pro.jpg" alt="">
+                </div>
+
+                <div class="body">
+                    <h3>I used meetup to make friends at brunch</h3>
+
+                    <p>
+                        New Jersey-based writer and college Student Brianna Strykers wanted to  
+                        meet friends in her hometown. Learn how she used Meetup to make connection by joining 
+                        a Girls Night Out Meetup group
+                    </p>
+                </div>
+            </div>
+
+            <div class="friendship-card">
+                <div class="header">
+                    <img src="./static/img/pro2.jpg" alt="">
+                </div>
+
+                <div class="body">
+                    <h3>How I turned casual connections into friendship</h3>
+
+                    <p>
+                        It's proven that closer friendship are harder to make as an adult. But 
+                        don't sweat here is what you can do us an adult.
+                    </p>
+                </div>
+            </div>
+
+            <div class="friendship-card">
+                <div class="header">
+                    <img src="./static/img/pro8.jpg" alt="">
+                </div>
+
+                <div class="body">
+                    <h3>Do you have the <span class="bold">Right</span> number of friends</h3>
+
+                    <p>
+                       Studies around the world have tried to help people answer the question.
+                       Learn about the the three tiers of friendship and how to fulfil them.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <footer class="margin-top-lg">
+        <div class="container padding-bottom-md">
+
+            <div class="head">
+                <a href="#">Create your own meetup group</a>
+                <a href="#">Meetup btn here</a>
+
+            </div>
+
+            <div class="body flex-space-between padding-top-sm">
+                <div class="your-account flex-col">
+                    <h3>Your account</h3>
+                    <a href="#">Sign up</a>
+                    <a href="#">Log in</a>
+                    <a href="#">Help</a>
+                    <a href="#">Become an affiliate</a>
+                </div>
+
+                <div class="discovery flex-col">
+                    <h3>Discover</h3>
+                    <a href="#">Groups</a>
+                    <a href="#">Calender</a>
+                    <a href="#">Topics</a>
+                    <a href="#">Cities</a>
+                    <a href="#">Online Event</a>
+                    <a href="#">Load Guides</a>
+                    <a href="#">Make Friends</a>
+
+                </div>
+
+                <div class="meetup flex-col">
+                    <h3>Meetup</h3>
+                    <a href="#">About</a>
+                    <a href="#">Meetup Pro</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Apps</a>
+                    <a href="#">Podcast</a>
+                  
+                </div>
+
+            </div>
+
+
+            <div class="footer padding-top-md">
+                <div class="follow-us flex-space-between">
+                    <div class="social">
+                        <a href="#">Instagram here</a>
+                        <a href="#">Facebook here</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram here</a>
+                        <a href="#">TikTokk here222</a>
+                    </div>
+
+                    <div class="find-us-here">
+                        <a href="#"><img src="static/img/appStore.svg" alt="" srcset=""></a>
+                       <a href="#"><img src="static/img/googlePlay.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-links padding-top-md">
+                    <a href="#">© 2024 Meetup</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

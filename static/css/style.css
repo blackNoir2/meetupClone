@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;700&display=swap');
+
+:root {
+
+    /* colors */
+    --background-color: #e32359;
+    --black-bg-color: rgb(38, 38, 38);
+    --border-color: #e32359;
+    --white: #fff;
+
+    
+    /* fonts */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /* font sizes */
+    --font-size-xsm: 1.1rem;
+    --font-size-sm: 1.125rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 2.5rem;
+
+     
+    /* margins */
+    --margin-sm: 30px;
+    --margin-lg: 80px;
+    --margin-xlg: 100px;
+    --margin-xxl: 129px;
+
+
+    /* padding */
+    --padding-sm: 20px;
+    --padding-md: 40px;
+    --padding-lg: 120px;
+
+    --padding-top-md: 60px;
+
+     /* shadows and effects */
+     --box-shadow-primary:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     --box-shadow-secondary: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     --border-radius-sm: 6%;
+     --border-radius-md: 50%;
+
+
+    /* sizes */
+    --width-lg: 85%;
+    --width-xlg: 90%;
+    --width-md: 70%;
+    --width-xsm: 25%;
+    --width-sm: 60%;
+    --width-normal: 100%;
+   
+    /* images medium */
+    --img-width-md: 300px;
+    --img-height-md: 150px;
+
+    /* images large */
+    --img-width-lg: 430px;
+    --img-height-lg: 200px;
+
+
+    /* icon sizes */
+    --icon-width: 20px;
+
+
+
+
+}
+
+
+* {
+    /* Box Model */
+    box-sizing: border-box;
+
+    /* Spacing */
+    padding: 0;
+    margin: 0;
+
+    /* Transitions and Animations */
+    transition: 1s ease-in-out;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font-roboto);
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: var(--font-size-xsm);
+}
+h1 {
+    padding-bottom: 10px;
+    font-family: var(--font-roboto);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-sm);
+}
+
+img {
+    cursor: pointer;
+}
+
+/* form elements */
+form {
+    display: flex;
+    gap: 2px;
+    width: var(--width-normal);
+}
+
+.form-search-icon {
+    height: 20px;
+}
+
+/* input fields */
+input[type=search] {
+    border: 1px solid lavender;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-md);
+    height: 42px;
+    width: var(--width-md);
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    padding-left: 2px;
+}
+
+/* utilities */
+
+/* Padding */
+.padding-sm {
+    padding: var(--padding-sm);
+}
+
+.padding-bottom-sm {
+    padding-bottom: var(--padding-sm);
+}
+
+.padding-bottom-md {
+    padding-bottom: var(--padding-md);
+}
+
+.padding-top-sm {
+    padding-top: var(--padding-sm);
+}
+
+
+.padding-top-lg {
+    padding-top: var(--padding-lg);
+}
+
+.padding-top-md {
+    padding-top: var(--padding-md);
+}
+
+
+.padding-left-sm {
+    padding-left: var(--padding-sm);
+}
+
+.padding-right-sm {
+    padding-right: var(--padding-sm);
+}
+
+
+/* margins */
+.margin-top-lg {
+    margin-top: var(--margin-xlg);   /* 100px */
+}
+
+.margin-bottom-lg {
+    margin-top: var(--margin-xlg);   /* 100px */
+}
+
+.margin-top-lg {
+    margin-top: var(--margin-lg);   /* 80px */
+}
+
+
+/* text */
+.bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Title */
+.title {
+    font-size: var(--font-size-lg);
+    font-family: var(--font-roboto);
+    text-transform: capitalize;
+}
+
+
+.display-text {
+    color: blue;
+    font-weight: bold;
+      
+}
+
+
+/* flex elements */
+.flex-items {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+
+.flex-item {
+    background: ghostwhite;
+    box-shadow: var(--box-shadow-secondary);
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;   
+}
+
+.flex-items a {
+    display: flex;
+    
+}
+
+.flex-item img {
+    height: 30px;
+    text-align: center;
+}
+
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* The navigation elements */
+
+.nav-header {
+    display: flex;
+    width: var(--width-sm);
+}
+
+
+.nav-container {
+
+     /* fonts */
+     font-family: var(--font-roboto);
+     font-size: var(--font-size-sm);
+
+    /* padding */
+     padding-top: var(--padding-sm); 
+     padding-right: var(--padding-md); 
+    
+    /* margin */
+    margin: auto;
+
+    /* sizes */
+     width: var(--width-normal);
+
+}
+
+
+.logo {
+    height: 100px;
+}
+
+
+.nav-logo img {
+   
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
+    transform: translateY(-30px);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 19.2px;
+}
+
+
+
+/* Buttons */
+.search-btn {
+    background: var(--background-color);
+    border: none;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* icons */
+.icons {
+    transform: translateY(5px);
+    width: var(--icon-width);
+}
+
+
+/* figcaption */
+figcaption {
+    letter-spacing: 0.1px;
+    padding-top: var(--padding-sm);
+}
+
+
+
+
+/* Call to action section */
+
+.call-to-action .container {
+
+    font-family: var(--font-montserrat);
+
+    /* padding and margin */
+    margin: auto;
+    padding-top: var(--padding-md);
+
+    /* sizes */
+    width: var(--width-lg);
+    
+}
+
+.call-to-action-p-info {
+    line-height: 1.5;
+    font-size: var(--font-size-sm);
+    width: var(--width-xlg);
+
+}
+
+
+/* related width sizes for all containers */
+
+/* Sections */
+#events .container,
+#events h1,
+#explore-top-categories,
+#upcoming-events .container,
+#upcoming-events h1,
+#upcoming-events > div:nth-child(2),
+footer .container,
+.friendships .container,
+.how-meetup-works,
+.join-us,
+.popular-meetup-cities .container {
+    /* sizes */
+    margin: auto;
+    width: var(--width-lg);
+}
+
+
+/* Events */
+#events .container,
+#upcomimg-events .container {
+
+    /* flex elements */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* font-family */
+    font-family: var(--font-roboto);
+
+}
+
+
+#upcoming-events > div:nth-child(2) {
+    display: flex;
+    margin: auto;  
+}
+
+
+
+/* Event card related content */
+.event-card,
+.event-card .footer,
+.popular-meetup-cities .container,
+.upcoming-event-card,
+.upcoming-event-card .footer{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.event-card,
+.upcoming-event-card  {  
+    width: var(--width-xsm);
+    padding-bottom: var(--padding-md);
+}
+
+
+
+/* The card images */
+.upcoming-event-card .header img,
+.event-card .header img  {
+    box-shadow: var(--box-shadow-primary);
+    border-radius: var(--border-radius-sm)
+}
+
+
+
+/* card images */
+.upcoming-event-card .header img, 
+.event-card .header img {
+    height: var(--img-height-md);
+}
+
+.event-card .header img {
+    width: var(--img-width-md);
+}
+
+
+/* spacing, margin and padding */
+.explore-top-categories .container,
+.popular-meetup-cities .container {
+    font-family: var(--font-montserrat);
+}
+
+
+
+
+
+/* Cities section */
+.cities {
+    gap: 120px;
+}
+
+.city {
+    padding-top: var(--padding-sm);
+}
+
+.city h2 {
+    text-align: center;
+}
+
+.city-img {
+
+    height: 150px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-primary);
+}
+
+
+
+/* how meets up work section */
+.how-meetup-works {
+    font-family: var(--font-montserrat);
+}
+
+
+/* Card section for the how meets up work */
+.how-meetup-works .cards {
+    gap: 17.6px;
+ 
+}
+
+.how-meetup-works .card {
+
+    /* flex */
+    display: flex;
+
+    background: ghostwhite;
+    box-shadow: var(--box-shadow-primary);
+    gap: 32px;
+
+    /* sizes */
+    width: var(--width-sm);
+
+    /* paddings */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+
+}
+
+
+/* Friendshp section */
+.friendships {
+    /* padding-top: 60px; */
+}
+
+.friendships .container .header {
+  width: var(--width-md);
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.friends {
+    display: flex;
+}
+
+
+/* card section for friends section */
+.friendships .header img {
+    box-shadow: var(--box-shadow-primary);
+    width: var(--img-width-lg);
+    height: var(--img-height-lg);
+    
+}
+
+.friendship-card {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    gap: 1px;
+}
+
+.friendship-card .body p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding-top: var(--padding-sm);
+    width: var(--width-xlg);
+
+}
+
+
+
+
+.host {
+    color: gray;
+    /* font-weight: bold; */
+    text-transform: capitalize;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/* The join us article */
+.join-us {
+    background: lavender;
+    box-shadow: var(--box-shadow-primary);
+}
+
+
+
+/* Footer section */
+
+footer {
+    background: var(--black-bg-color);
+    color: white;
+}
+
+
+footer .container {
+    padding-top: 50px;
+}
+
+
+footer .container .head {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+footer .container div > a {
+    color: white;
+    padding-top: 4px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+/* social links and images */
+
+.follow-us {
+ 
+}
+
+.footer-links {
+    
+}
+
+
+.social {
+    display: flex;
+    gap: 1.2rem;
+}
