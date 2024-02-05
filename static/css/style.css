@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
 :root {
 
@@ -15,6 +16,7 @@
     --font-roboto: 'Roboto', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-anton:  'Anton', sans-serif;
+    --font-protest-riot: 'Protest Riot', sans-serif;
 
     /* font sizes */
     --font-size-xsm: 1.1rem;
@@ -80,6 +82,7 @@
 
     /* Transitions and Animations */
     transition: 1s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 
@@ -92,6 +95,11 @@ body {
 a {
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--background-color);
+    font-weight: bold;
 }
 
 p {
@@ -126,11 +134,17 @@ form {
 
 /* input fields */
 input[type=search] {
+
+
     border: 1px solid lavender;
+
+    /* fonts */
     font-family: var(--font-poppins);
     font-size: var(--font-size-md);
+
+    /* sizes */
     height: 42px;
-    width: var(--width-md);
+    width: var(--width-sm);
 }
 
 ::placeholder {
@@ -263,7 +277,15 @@ input[type=search] {
 
 .nav-header {
     display: flex;
-    width: var(--width-sm);
+    /* width: var(--width-sm); */
+}
+
+
+.nav-body a {
+
+    color: var(--background-color);
+    font-size: var(--font-size-md);
+    font-family: var(--font-protest-riot);
 }
 
 
@@ -315,6 +337,36 @@ input[type=search] {
     padding-right: 10px;
 }
 
+.signup-btn {
+    background: var(--background-color);
+    box-shadow: var(--box-shadow-secondary);
+    color: white;
+
+}
+
+.button-sm {
+    border: 1px solid;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.button-md {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+
+.call-to-action-btn,
+.join-us-btn {
+    background: var(--background-color);
+    box-shadow: var(--box-shadow-primary);
+    color: white;
+
+}
+
+.join-us-btn a {
+    color: white;
+}
 
 /* icons */
 .icons {
@@ -606,6 +658,11 @@ footer .container div > a {
     gap: 40px;
 }
 
+footer .container div > a:hover {
+    color: var(--background-color);
+    font-weight: bold;
+}
+
 
 
 /* social links and images */
@@ -627,4 +684,100 @@ footer .container div > a {
 .social a > img {
     height: 30px;
     width: 30px;
+}
+
+.social a > img:hover {
+    transform: rotate('360deg');
+}
+
+
+/* The icons for login */
+.login-icon {
+    height: 30px;
+    transform: translateY(10px);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+
+.meetup-logo {
+    margin-top: 20px;
+}
+
+.meetup-logo h1 {
+    text-transform: uppercase;
+    color: var(--background-color);
+}
+.meetup-login-icon {
+    height: 100px;
+}
+
+#login .container,
+#register .container {
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    width: 28%;
+    box-shadow: var(--box-shadow-primary);
+    height: 580px;
+    padding: var(--padding-sm);
+    padding-top: var(--padding-sm);
+    margin: auto;
+}
+
+
+/* The sign up and login attributes of the form */
+
+.login-btn {
+    font-size: 16px;
+    
+}
+
+#email,
+.google-login,
+.facebook-login,
+#password,
+.submit-btn {
+    height: 50px;
+    font-size: var(--font-size-md);
+   
+    
+}
+
+.submit-btn {
+    background: var(--background-color);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.google-login,
+.facebook-login,
+.submit-btn {
+    /* height: 60px; */
+    margin-top: 10px;
+    border: 3px solid lavender;
+  
+}
+
+.submit-btn:hover {
+    border: 2px solid var(--background-color);
+    background: white;
+    color: black;
+}
+
+.facebook-login:hover,
+.google-login:hover {
+    border: 2px solid var(--background-color);
+    color: white;
+}
+
+.google-login,
+.facebook-login {
+    font-size: var(--font-size-sm);
+    
 }
