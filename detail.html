@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/img/meetupLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Meetup Clone</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <nav class="nav-container flex-space-between">
+    
+                <div class="nav-header">
+                    <div class="nav-logo">
+                        <img src="./static/img/meetupLogo.png" alt="Meetup Logo" class="meetup-login-icon">
+                    </div>
+                    <form action="/" class="post">
+                        <input type="search" name="search-events" id="search-events" placeholder="search events.." required autofocus>
+                        <input type="search" name="search-location" id="search-location" placeholder="search location" required>
+                        <button type="submit" class="search-btn"><img src="static/img/search.svg" 
+                            alt="orm seach button" 
+                            class="form-search-icon">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="nav-body">
+                    <a>Meetup Clone</a>
+                </div>
+    
+                <div class="nav-footer">
+                    <div class="nav-links">
+                        <a href="#">English</a>
+                        <a href="#">Blog</a>
+                        <a href="/login.html">Log in</a>
+                        <a href="/signup.html" class="button-sm signup-btn">Sign up</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    
+    <div id="banner">
+
+        <div class="container">
+            <div class="banner-info">
+                <p class="banner-title">Creating high-performance teams using LEGO® SERIOUS PLAY®</p>
+            </div>
+         
+            <div class="author flex-row">
+                <div class="img">
+                    <img src="static/img/author-45x45.jpg" alt="">
+                </div>
+              
+                <div class="hosts flex-col">
+                    <span>Hosted by</span>
+                    <span>Shaun B and 2.others</span>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <section id="event-details">
+        <div class="container padding-bottom-md">
+
+            <div class="details flex-row">
+               
+                <div class="main-info">
+                    <div class="image">
+                        <img src="static/img/cover-detail.webp" alt="" srcset="">
+                    </div>
+
+                  
+                    <div class="agenda-times">
+                       <h1 class="title">Agenda</h1>
+
+                        <ul>
+                            <li>6:15pm Doors open, socialising</li>
+                            <li>6:30pm Food and drinks offered by our sponsor</li>
+                            <li>7:00pm Doors close</li>
+                            <li>7:15pm Introduction, News, Talks, Django Quiz</li>
+                            <li>8:15pm Socialising</li>
+                            <li>9:30pm Fin</li>
+                        </ul>
+                     
+                        
+                       
+                    </div>
+                    <div class="event-details">
+                        <h1 class="title">Event</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam possimus accusantium sed mollitia, dicta velit officiis unde repellendus laboriosam excepturi esse accusamus commodi facilis maxime nobis voluptatum pariatur. Maiores!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur, aliquam consequuntur autem, repellat error nostrum reiciendis iusto voluptatibus deserunt quia! Ipsam pariatur facilis excepturi reiciendis praesentium aut vel est?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita sint molestiae distinctio laborum, tempora quam ab reprehenderit aspernatur quos optio obcaecati commodi, autem ipsa praesentium fuga inventore voluptatibus numquam debitis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perspiciatis unde exercitationem ab magni, nobis enim minima, laborum sint fugit facilis. Porro aliquam vero iste nihil voluptatum dicta in dolore.</p>
+                    </div>
+
+                    <h1 class="title attendees-title">Attendees (49) </h1>
+                    <div class="attendees flex-row">
+                      
+                        <div class="attendees-card flex-col">
+                            <div class="img text-center">
+                                <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
+                            </div>
+                            <h2 class="attendees-host">host</h2>
+                            
+                            <h3>Sam</h3>
+                            <p class="organiser">Organiser</p>
+                        </div>
+
+                        <div class="attendees-card flex-col">
+                            <div class="img text-center">
+                                <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
+                            </div>
+                            <h2 class="attendees-host">host</h2>
+                            
+                            
+                            <h3>Sam</h3>
+                            <p class="organiser">Organiser</p>
+                        </div>
+
+                        <div class="attendees-card flex-col">
+                            <div class="img text-center">
+                                <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
+                            </div>
+                            <h2 class="attendees-host">Attendee</h2>
+                            
+                            
+                            <h3>Sam</h3>
+                            <p class="organiser">Organiser</p>
+                        </div>
+
+                        <div class="attendees-card flex-col">
+                            <div class="img text-center">
+                                <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
+                            </div>
+                            <h2 class="attendees-host">Attendee</h2>
+                            
+                            
+                            <h3>Sam</h3>
+                            <p class="organiser">Organiser</p>
+                        </div>
+
+                        <div class="attendees-card flex-col">
+                            <h2 class="attendees-host">attendees</h2>
+                            <div class="amount-of-attendees flex-col">
+                                <span>10 +</span>
+                                <a href="#" class="view-attendees-link">View all</a>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                </div>
+    
+    
+                <div class="sidebar">
+                    <h1>Sidebar</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ipsa dolore. Odit adipisci laudantium magnam ipsa rerum incidunt, expedita repellendus perspiciatis, eligendi consequuntur recusandae dolorum atque rem repellat maiores aut.</p>
+                </div>
+            </div>
+           
+            <h1 class="related-card-title title">Members might interested in</h1>
+            <div class="related-cards flex-row">
+                
+               
+                 
+                    <div class="related-card">
+                        <div class="header">
+                            <p class="time-attended">Wed, Feb 21, 2024, 12:00 PM GMT</p>
+                        </div>
+                 
+                        <div class="body">
+                            <h4>How to get the best out of Power BI and the Power Platform</h4>
+
+                            <p>MeteorNYC (by High Impact Tech)</p>
+                        </div>
+                      
+                        <div class="footer flex-space-between">
+                            <div class="attendees-img flex-row">
+                                <img src="static/img/attendees-img.jpeg" alt=""  class="attendees-img">
+                                <span >10+</span>
+                            </div>
+                            <button class="attend-btn">Attend</button>
+                        </div>
+                    </div>
+                    
+                    <div class="related-card">
+                        <div class="header">
+                            <p class="time-attended">Wed, Feb 21, 2024, 12:00 PM GMT</p>
+                        </div>
+                 
+                        <div class="body">
+                            <h4>How to get the best out of Power BI and the Power Platform</h4>
+
+                            <p>MeteorNYC (by High Impact Tech)</p>
+                        </div>
+                      
+                        <div class="footer flex-space-between">
+                            <div class="attendees-img flex-row">
+                                <img src="static/img/attendees-img.jpeg" alt="" class="attendees-img">
+                                <span>10+</span>
+                            </div>
+                            <button class="attend-btn">Attend</button>
+                        </div>
+                    </div>
+            
+               
+                    <div class="related-card">
+                        <div class="header">
+                            <p class="time-attended">Wed, Feb 21, 2024, 12:00 PM GMT</p>
+                        </div>
+                 
+                        <div class="body">
+                            <h4>How to get the best out of Power BI and the Power Platform</h4>
+
+                            <p>MeteorNYC (by High Impact Tech)</p>
+                        </div>
+                      
+                        <div class="footer flex-space-between">
+                            <div class="attendees-img flex-row">
+                                <img src="static/img/attendees-img.jpeg" alt=""  class="attendees-img">
+                                <span >10+</span>
+                            </div>
+                            <button class="attend-btn">Attend</button>
+                        </div>
+                    </div>
+            
+               
+               
+
+            </div>
+
+        </div>
+    </section>
+
+  
+
+
+
+
+    <footer>
+        <div class="container padding-bottom-md">
+
+            <div class="head">
+                <a href="#">Create your own meetup group</a>
+                <a href="#">Meetup btn here</a>
+
+            </div>
+
+            <div class="body flex-space-between padding-top-sm">
+                <div class="your-account flex-col">
+                    <h3>Your account</h3>
+                    <a href="#">Sign up</a>
+                    <a href="#">Log in</a>
+                    <a href="#">Help</a>
+                    <a href="#">Become an affiliate</a>
+                </div>
+
+                <div class="discovery flex-col">
+                    <h3>Discover</h3>
+                    <a href="#">Groups</a>
+                    <a href="#">Calender</a>
+                    <a href="#">Topics</a>
+                    <a href="#">Cities</a>
+                    <a href="#">Online Event</a>
+                    <a href="#">Load Guides</a>
+                    <a href="#">Make Friends</a>
+
+                </div>
+
+                <div class="meetup flex-col">
+                    <h3>Meetup</h3>
+                    <a href="#">About</a>
+                    <a href="#">Meetup Pro</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Apps</a>
+                    <a href="#">Podcast</a>
+                  
+                </div>
+
+            </div>
+
+
+            <div class="footer padding-top-md">
+                <div class="follow-us flex-space-between">
+                    <div class="social">
+                        <a href="#"><img src="static/img/social-instagram.svg" alt=""></a>
+                        <a href="#"><img src="static/img/facebook.svg" alt=""></a>
+                        <a href="#"><img src="static/img/twitter-original.svg" alt=""></a>
+                        <a href="#"><img src="static/img/tik-tok.svg" alt=""></a>
+                    </div>
+
+                    <div class="find-us-here">
+                        <a href="#"><img src="static/img/appStore.svg" alt="" srcset=""></a>
+                       <a href="#"><img src="static/img/googlePlay.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-links padding-top-md">
+                    <a href="#" class="copyright-year">© 2024 Meetup</a>
+                    <a href="#" class="terms-of-condition-link">Terms of Service</a>
+                    <a href="#" class="privacy-policy-link">Privacy Policy</a>
+                    <a href="#" class="cookie-settings-link">Cookie Settings</a>
+                    <a href="#" class="cookie-policy-link">Cookie Policy</a>
+                    <a href="#" clas="help-link">Help</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

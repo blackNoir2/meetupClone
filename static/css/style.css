@@ -66,9 +66,6 @@
     /* icon sizes */
     --icon-width: 20px;
 
-
-
-
 }
 
 
@@ -94,17 +91,20 @@ body {
 
 a {
     color: black;
+    cursor: pointer;
     text-decoration: none;
 }
 
 a:hover {
     color: var(--background-color);
     font-weight: bold;
+    text-decoration: underline;
 }
 
 p {
     font-size: var(--font-size-xsm);
     color: rgb(30, 28, 28);
+    cursor: pointer;
 }
 h1 {
     padding-bottom: 10px;
@@ -112,11 +112,20 @@ h1 {
     text-transform: capitalize;
 }
 
+
+
 h2 {
     font-family: var(--font-anton);
     font-size: var(--font-size-sm);
 }
 
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover {
+    color: var(--background-color);
+    cursor: pointer;
+}
 img {
     cursor: pointer;
 }
@@ -132,6 +141,16 @@ form {
     height: 20px;
 }
 
+ul {
+    line-height: 1.5;
+    font-size: var(--font-montserrat);
+}
+
+li {
+    list-style: none;
+    font-size: var(--font-size-sm);
+    
+}
 /* input fields */
 input[type=search] {
 
@@ -234,6 +253,7 @@ input[type=search] {
 .flex-items {
     cursor: pointer;
     display: flex;
+    margin-top: var(--margin-lg);
     margin: auto;
     gap: 10px;
 }
@@ -248,6 +268,7 @@ input[type=search] {
 
 .flex-items a {
     display: flex;
+    /* margin-top: var(--margin-sm); */
     
 }
 
@@ -303,6 +324,7 @@ input[type=search] {
     margin: auto;
 
     /* sizes */
+    height: 80px;
      width: var(--width-normal);
 
 }
@@ -332,15 +354,23 @@ input[type=search] {
 .search-btn {
     background: var(--background-color);
     border: none;
+    cursor: pointer;
     height: 42px;
     padding-left: 10px;
     padding-right: 10px;
+
 }
 
 .signup-btn {
     background: var(--background-color);
     box-shadow: var(--box-shadow-secondary);
     color: white;
+    cursor: pointer;
+
+}
+
+.signup-btn:hover {
+    color: black;
 
 }
 
@@ -361,7 +391,13 @@ input[type=search] {
     background: var(--background-color);
     box-shadow: var(--box-shadow-primary);
     color: white;
+    cursor: pointer;
 
+}
+
+.call-to-action-btn:hover,
+.join-us-btn:hover {
+    color: black;
 }
 
 .join-us-btn a {
@@ -416,7 +452,9 @@ figcaption {
 /* related width sizes for all containers */
 
 /* Sections */
+#banner .container,
 #events .container,
+#event-details .container,
 #events h1,
 #explore-top-categories,
 #upcoming-events .container,
@@ -432,6 +470,53 @@ footer .container,
     width: var(--width-lg);
 }
 
+
+/* The banner section */
+#banner {
+    box-shadow: var(--box-shadow-secondary);
+    border-top: 1px solid lavender;
+    margin-top: 10px;
+    
+    
+}
+
+#banner .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.banner-title {
+  font-size: 27px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* The events details section */
+#event-details {
+    background: lavender;
+}
+#event-details .container {
+   padding-top: var(--padding-top-md);
+}
+
+#event-details p {
+    line-height: 1.7;
+   
+}
+
+.organiser {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main-info,
+.agenda-times {
+    width: 60%;
+}
+
+.sidebar {
+    width: 40%;
+}
 
 /* Events */
 #events .container,
@@ -452,6 +537,10 @@ footer .container,
     margin: auto;  
 }
 
+
+.author {
+    gap: 10px;
+}
 
 
 /* Event card related content */
@@ -500,9 +589,126 @@ footer .container,
 }
 
 
+/* The attendees */
+.attendees {
+    background: white;
+    box-shadow: var(--box-shadow-primary);
+    padding: var(--padding-sm);
+    font-family: var(--font-roboto);
+    gap: 10px;
+    position: relative;
+}
+
+.attendees-card {
+    border: 3px solid lavender;
+    text-align: center;
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-sm);
+    width: 20%;
+
+}
+
+.attendees-card h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.attendees-img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.attendees-host{
+    background: brown;
+    color: white;
+    font-family: var(--font-roboto);
+    text-transform: capitalize;
+    position: absolute;
+    padding: 4px;
+    top: 13px;
+    font-size: 14px;
+}
+
+.amount-of-attendees {
+  position: absolute;
+  top: 40%;
+  padding-left: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-attendees-link {
+    font-size: 16px;
+}
+
+.attendees-title {
+    font-size: 20px;
+}
 
 
 
+.related-cards{
+    gap: 10px;
+  }
+
+.related-card {
+    width: 34.3%;
+    background: white;
+    padding: 30px;
+    margin-bottom: ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    box-shadow: var(--box-shadow-primary);
+  }
+
+
+.related-card p {
+    color: darkblue;
+    font-size: 17px;
+}
+
+.related-card .body h4 {
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-sm);
+    font-weight: lighter;
+}
+
+.agenda-times h1,
+#event-details h1,
+.attendees-title,
+.related-card-title {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.attend-btn {
+    width: 102px;
+    height: 40px;
+    background: var(--border-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 2%;
+  }
+
+
+.attendees-img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+.related-card .footer {
+    padding-top: 40px;
+}
+
+
+.related-card .footer div span {
+    font-size: 20px;
+    font-weight: bold;
+}
 /* Cities section */
 .cities {
     gap: 120px;
@@ -511,6 +717,8 @@ footer .container,
 .city {
     padding-top: var(--padding-sm);
 }
+
+
 
 .city h2 {
     text-align: center;
