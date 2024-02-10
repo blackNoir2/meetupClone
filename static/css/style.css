@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
 
+
+/* The root elements */
 :root {
 
     /* colors */
-    --background-color: #e32359;
     --black-bg-color: rgb(38, 38, 38);
-    --border-color: #e32359;
+    --ruby-pink: #e32359;
     --white: #fff;
 
     
@@ -17,6 +19,7 @@
     --font-montserrat: 'Montserrat', sans-serif;
     --font-anton:  'Anton', sans-serif;
     --font-protest-riot: 'Protest Riot', sans-serif;
+
 
     /* font sizes */
     --font-size-xsm: 1.1rem;
@@ -37,7 +40,9 @@
     --padding-md: 40px;
     --padding-lg: 120px;
 
+
     --padding-top-md: 60px;
+   
 
      /* shadows and effects */
      --box-shadow-primary:rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,13 +52,14 @@
 
 
     /* sizes */
-    --width-lg: 85%;
-    --width-xlg: 90%;
-    --width-md: 70%;
     --width-xsm: 25%;
     --width-sm: 60%;
+    --width-md: 70%;
+    --width-lg: 85%;
+    --width-xlg: 90%;
     --width-normal: 100%;
    
+
     /* images medium */
     --img-width-md: 300px;
     --img-height-md: 150px;
@@ -69,6 +75,7 @@
 }
 
 
+/* Reset elements */
 * {
     /* Box Model */
     box-sizing: border-box;
@@ -83,12 +90,14 @@
 }
 
 
+/* The elements to be used in the body */
 body {
     overflow-x: hidden;
     font-family: var(--font-roboto);
 }
 
 
+/* The anchor tags */
 a {
     color: black;
     cursor: pointer;
@@ -96,22 +105,27 @@ a {
 }
 
 a:hover {
-    color: var(--background-color);
+    color: var(--ruby-pink);
     font-weight: bold;
     text-decoration: underline;
 }
 
+/* The p-tag elements */
 p {
-    font-size: var(--font-size-xsm);
+    
     color: rgb(30, 28, 28);
     cursor: pointer;
-}
-h1 {
-    padding-bottom: 10px;
-    font-family: var(--font-roboto);
-    text-transform: capitalize;
+    font-size: var(--font-size-xsm);
 }
 
+
+/* The heading element tags */
+h1 {
+  
+    font-family: var(--font-roboto);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
 
 
 h2 {
@@ -123,12 +137,10 @@ h1:hover,
 h2:hover,
 h3:hover,
 h4:hover {
-    color: var(--background-color);
+    color: var(--ruby-pink);
     cursor: pointer;
 }
-img {
-    cursor: pointer;
-}
+
 
 /* form elements */
 form {
@@ -137,23 +149,14 @@ form {
     width: var(--width-normal);
 }
 
+
 .form-search-icon {
     height: 20px;
 }
 
-ul {
-    line-height: 1.5;
-    font-size: var(--font-montserrat);
-}
 
-li {
-    list-style: none;
-    font-size: var(--font-size-sm);
-    
-}
 /* input fields */
 input[type=search] {
-
 
     border: 1px solid lavender;
 
@@ -166,53 +169,125 @@ input[type=search] {
     width: var(--width-sm);
 }
 
+
+/* list structure elements */
+ul {
+    line-height: 1.5;
+    font-size: var(--font-montserrat);
+}
+
+li {
+    list-style: none;
+    font-size: var(--font-size-sm);    
+}
+
+
+button {
+    cursor: pointer;
+}
+
+/* Placeholder elements */
 ::placeholder {
     font-size: 1rem;
     font-family: var(--font-poppins);
     padding-left: 2px;
 }
 
+
+/* The font style know as rowdies */
+.rowdies-light {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* The image tag */
+img {
+    cursor: pointer;
+}
+
+.side-logo img {
+    height: 90px;
+}
+
+
+/* The font sizes for the outside elements tags */
+.font-xsm {
+    font-size: var(--font-size-xsm)
+}
+
+.font-sm {
+    font-size: var(--font-size-sm);
+}
+
+
+.font-md {
+    font-size: var(--font-size-md);
+}
+
+
+.font-lg {
+    font-size: var(--font-size-lg);
+}
+
 /* utilities */
 
 /* Padding */
 .padding-sm {
-    padding: var(--padding-sm);
+    padding: var(--padding-sm); /* 20 px*/
 }
 
 .padding-bottom-sm {
-    padding-bottom: var(--padding-sm);
+    padding-bottom: var(--padding-sm); /* 20 px*/
 }
 
 .padding-bottom-md {
-    padding-bottom: var(--padding-md);
+    padding-bottom: var(--padding-md); /* 40 px*/
 }
 
 .padding-top-sm {
-    padding-top: var(--padding-sm);
+    padding-top: var(--padding-sm); /* 20 px*/
 }
 
 
 .padding-top-lg {
-    padding-top: var(--padding-lg);
+    padding-top: var(--padding-lg); /* 120 px*/
 }
 
 .padding-top-md {
-    padding-top: var(--padding-md);
+    padding-top: var(--padding-md); /* 160 px*/
 }
 
 
 .padding-left-sm {
-    padding-left: var(--padding-sm);
+    padding-left: var(--padding-sm); /* 20 px*/
 }
 
 .padding-right-sm {
-    padding-right: var(--padding-sm);
+    padding-right: var(--padding-sm); /* 20 px*/
 }
 
 
 /* margins */
 .margin-top-lg {
     margin-top: var(--margin-xlg);   /* 100px */
+}
+
+.margin-top-sm {
+    margin-top: var(--margin-sm);
 }
 
 .margin-bottom-lg {
@@ -224,9 +299,15 @@ input[type=search] {
 }
 
 
-/* text */
+/* text transformations */
 .bold {
     font-weight: bold;
+}
+
+.display-text {
+    color: blue;
+    font-weight: bold;
+
 }
 
 .text-center {
@@ -234,28 +315,19 @@ input[type=search] {
 }
 
 
-/* Title */
-.title {
-    font-size: var(--font-size-lg);
-    font-family: var(--font-anton);
-    text-transform: capitalize;
-}
-
-
-.display-text {
-    color: blue;
-    font-weight: bold;
-      
-}
-
-
 /* flex elements */
 .flex-items {
+
     cursor: pointer;
+
+    /* Flex elements */
     display: flex;
+    gap: 10px;
+
+    /* margin elements */
     margin-top: var(--margin-lg);
     margin: auto;
-    gap: 10px;
+   
 }
 
 .flex-item {
@@ -268,7 +340,7 @@ input[type=search] {
 
 .flex-items a {
     display: flex;
-    /* margin-top: var(--margin-sm); */
+    margin-top: var(--margin-sm);
     
 }
 
@@ -294,6 +366,13 @@ input[type=search] {
 }
 
 
+
+/* The site logo  */
+.logo {
+    height: 100px;
+}
+
+
 /* The navigation elements */
 
 .nav-header {
@@ -304,7 +383,7 @@ input[type=search] {
 
 .nav-body a {
 
-    color: var(--background-color);
+    color: var(--ruby-pink);
     font-size: var(--font-size-md);
     font-family: var(--font-protest-riot);
 }
@@ -330,11 +409,6 @@ input[type=search] {
 }
 
 
-.logo {
-    height: 100px;
-}
-
-
 .nav-logo img {
    
     padding-left: var(--padding-sm);
@@ -342,38 +416,59 @@ input[type=search] {
     transform: translateY(-30px);
 }
 
-
 .nav-links {
     display: flex;
     gap: 19.2px;
 }
 
 
+/* Display */
+.box {
+    background: white;
+    box-shadow: var(--box-shadow-secondary);
+    padding: 25px;
+  }
 
 /* Buttons */
 .search-btn {
-    background: var(--background-color);
     border: none;
     cursor: pointer;
+
+    /* sizes */
     height: 42px;
+
+    /* paddings */
     padding-left: 10px;
     padding-right: 10px;
 
 }
 
-.signup-btn {
-    background: var(--background-color);
-    box-shadow: var(--box-shadow-secondary);
+.free-btn {
+    background: white;
+    border: none;
+}
+
+/* Related button elements */
+.call-to-action-btn,
+.join-us-btn,
+.signup-btn,
+.search-btn {
+    background: var(--ruby-pink);
+    box-shadow: var(--box-shadow-primary);
     color: white;
     cursor: pointer;
-
 }
 
+
+/* hover button elements */
+.call-to-action-btn:hover,
+.join-us-btn:hover,
 .signup-btn:hover {
     color: black;
-
 }
+ 
 
+/* button sizes */
 .button-sm {
     border: 1px solid;
     padding-right: 20px;
@@ -386,23 +481,11 @@ input[type=search] {
   }
 
 
-.call-to-action-btn,
-.join-us-btn {
-    background: var(--background-color);
-    box-shadow: var(--box-shadow-primary);
-    color: white;
-    cursor: pointer;
-
-}
-
-.call-to-action-btn:hover,
-.join-us-btn:hover {
-    color: black;
-}
-
+/* The button link color */
 .join-us-btn a {
     color: white;
 }
+
 
 /* icons */
 .icons {
@@ -420,6 +503,40 @@ figcaption {
 
 
 
+/* Sections */
+/* related width sizes for all containers */
+#banner .container,
+#events .container,
+#event-details .container,
+#events h1,
+#explore-top-categories,
+footer .container,
+.friendships .container,
+.how-meetup-works,
+.join-us,
+.popular-meetup-cities .container, 
+#upcoming-events .container,
+#upcoming-events h1,
+#upcoming-events > div:nth-child(2){
+
+    margin: auto;
+    width: var(--width-lg);
+}
+
+/* Events and upcoming related events */
+#events .container,
+#upcomimg-events .container {
+
+    /* flex elements */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* font-family */
+    font-family: var(--font-roboto);
+
+}
+
+
 /* Call to action section */
 
 .call-to-action .container {
@@ -435,6 +552,7 @@ figcaption {
     
 }
 
+
 .call-to-action-p-info {
     line-height: 1.5;
     font-size: var(--font-size-sm);
@@ -449,26 +567,8 @@ figcaption {
 .call-to-action .img {
     margin-right: var(--margin-xlg);
 }
-/* related width sizes for all containers */
 
-/* Sections */
-#banner .container,
-#events .container,
-#event-details .container,
-#events h1,
-#explore-top-categories,
-#upcoming-events .container,
-#upcoming-events h1,
-#upcoming-events > div:nth-child(2),
-footer .container,
-.friendships .container,
-.how-meetup-works,
-.join-us,
-.popular-meetup-cities .container {
-    /* sizes */
-    margin: auto;
-    width: var(--width-lg);
-}
+
 
 
 /* The banner section */
@@ -476,33 +576,40 @@ footer .container,
     box-shadow: var(--box-shadow-secondary);
     border-top: 1px solid lavender;
     margin-top: 10px;
-    
-    
 }
 
 #banner .container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-sm);
 }
 
 .banner-title {
-  font-size: 27px;
+  font-size: 1.68rem;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: var(--padding-sm);
 }
 
 /* The events details section */
 #event-details {
     background: lavender;
+   
 }
 #event-details .container {
    padding-top: var(--padding-top-md);
 }
 
 #event-details p {
-    line-height: 1.7;
+    line-height: 1.7;   
    
 }
+
+.event-details {
+    width: var(--width-md);
+    padding-bottom: var(--padding-sm);
+}
+
+
+
 
 .organiser {
     font-size: 14px;
@@ -518,18 +625,7 @@ footer .container,
     width: 40%;
 }
 
-/* Events */
-#events .container,
-#upcomimg-events .container {
 
-    /* flex elements */
-    display: flex;
-    flex-wrap: wrap;
-
-    /* font-family */
-    font-family: var(--font-roboto);
-
-}
 
 
 #upcoming-events > div:nth-child(2) {
@@ -621,13 +717,21 @@ footer .container,
 
 .attendees-host{
     background: brown;
+   
+}
+.attendees-guest {
+    background: green;
+}
+
+.attendees-host,
+.attendees-guest {
     color: white;
     font-family: var(--font-roboto);
-    text-transform: capitalize;
+    text-transform: uppercase;
     position: absolute;
     padding: 4px;
     top: 13px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .amount-of-attendees {
@@ -677,17 +781,21 @@ footer .container,
 }
 
 .agenda-times h1,
-#event-details h1,
 .attendees-title,
 .related-card-title {
     padding-top: 40px;
     font-size: 20px;
     font-weight: lighter;
 }
+
+.agenda-times h1 {
+    font-weight: bold;
+    font-size: 1.4375rem;
+}
 .attend-btn {
     width: 102px;
     height: 40px;
-    background: var(--border-color);
+    background: var(--ruby-pink);
     color: white;
     cursor: pointer;
     border-radius: 2%;
@@ -795,8 +903,8 @@ footer .container,
 .friendship-card {
     display: flex;
     flex-direction: column;
-    width: 33.3%;
-    gap: 1px;
+    width: 34.3%;
+    gap: 3px;
 }
 
 .friendship-card .body p {
@@ -867,7 +975,7 @@ footer .container div > a {
 }
 
 footer .container div > a:hover {
-    color: var(--background-color);
+    color: var(--ruby-pink);
     font-weight: bold;
 }
 
@@ -919,7 +1027,7 @@ label {
 
 .meetup-logo h1 {
     text-transform: uppercase;
-    color: var(--background-color);
+    color: var(--ruby-pink);
 }
 .meetup-login-icon {
     height: 100px;
@@ -957,7 +1065,7 @@ label {
 }
 
 .submit-btn {
-    background: var(--background-color);
+    background: var(--ruby-pink);
     color: white;
     font-size: 16px;
     text-transform: uppercase;
@@ -973,14 +1081,14 @@ label {
 }
 
 .submit-btn:hover {
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--ruby-pink);
     background: white;
     color: black;
 }
 
 .facebook-login:hover,
 .google-login:hover {
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--ruby-pink);
     color: white;
 }
 
@@ -989,3 +1097,36 @@ label {
     font-size: var(--font-size-sm);
     
 }
+
+
+/* the attend banner in the details page */
+.attend-banner {
+    width: var(--width-lg);
+    margin: auto;
+}
+
+.attend-banner .container {
+   
+}
+
+.attend-btn .buttons {
+    font-size: 14px;
+}
+
+.attend-event-btn {
+    background: var(--ruby-pink);
+    color: white;
+}
+.attend-options {
+    display: flex;
+}
+
+.sidebar-event-time p,
+.sidebar-event-info p {
+    font-size: 15px;
+}
+
+.sidebar-icon  {
+    height: 20px;
+    padding-right: 10px;
+  }

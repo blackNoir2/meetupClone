@@ -17,7 +17,10 @@
     
                 <div class="nav-header">
                     <div class="nav-logo">
-                        <img src="./static/img/meetupLogo.png" alt="Meetup Logo" class="meetup-login-icon">
+                        <a href="/index.html">
+                            <img src="./static/img/meetupLogo.png" alt="Meetup Logo" class="meetup-login-icon">
+                        </a>
+                       
                     </div>
                     <form action="/" class="post">
                         <input type="search" name="search-events" id="search-events" placeholder="search events.." required autofocus>
@@ -36,6 +39,7 @@
                 <div class="nav-footer">
                     <div class="nav-links">
                         <a href="#">English</a>
+                        <a href="/index.html">Home</a>
                         <a href="#">Blog</a>
                         <a href="/login.html">Log in</a>
                         <a href="/signup.html" class="button-sm signup-btn">Sign up</a>
@@ -92,7 +96,7 @@
                         
                        
                     </div>
-                    <div class="event-details">
+                    <div class="event-details padding-top-sm">
                         <h1 class="title">Event</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ullam possimus accusantium sed mollitia, dicta velit officiis unde repellendus laboriosam excepturi esse accusamus commodi facilis maxime nobis voluptatum pariatur. Maiores!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur, aliquam consequuntur autem, repellat error nostrum reiciendis iusto voluptatibus deserunt quia! Ipsam pariatur facilis excepturi reiciendis praesentium aut vel est?</p>
@@ -100,7 +104,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perspiciatis unde exercitationem ab magni, nobis enim minima, laborum sint fugit facilis. Porro aliquam vero iste nihil voluptatum dicta in dolore.</p>
                     </div>
 
-                    <h1 class="title attendees-title">Attendees (49) </h1>
+                    <div class="header-info flex-space-between padding-top-sm">
+                        <h1 class="title">Attendees (49) </h1>
+                        <a href="#">View all</a>
+                    </div>
+                   
                     <div class="attendees flex-row">
                       
                         <div class="attendees-card flex-col">
@@ -128,26 +136,26 @@
                             <div class="img text-center">
                                 <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
                             </div>
-                            <h2 class="attendees-host">Attendee</h2>
+                            <h2 class="attendees-guest">Attendee</h2>
                             
                             
-                            <h3>Sam</h3>
-                            <p class="organiser">Organiser</p>
+                            <h3>Peter</h3>
+                            <p class="organiser">Attendee</p>
                         </div>
 
                         <div class="attendees-card flex-col">
                             <div class="img text-center">
                                 <img src="static/img/author-45x45.jpg" alt="" class="attendees-img">
                             </div>
-                            <h2 class="attendees-host">Attendee</h2>
+                            <h2 class="attendees-guest">Attendee</h2>
                             
                             
-                            <h3>Sam</h3>
-                            <p class="organiser">Organiser</p>
+                            <h3>Jake</h3>
+                            <p class="organiser">Attendee</p>
                         </div>
 
                         <div class="attendees-card flex-col">
-                            <h2 class="attendees-host">attendees</h2>
+                            <h2 class="attendees-guest">attendees</h2>
                             <div class="amount-of-attendees flex-col">
                                 <span>10 +</span>
                                 <a href="#" class="view-attendees-link">View all</a>
@@ -160,12 +168,35 @@
     
     
                 <div class="sidebar">
-                    <h1>Sidebar</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ipsa dolore. Odit adipisci laudantium magnam ipsa rerum incidunt, expedita repellendus perspiciatis, eligendi consequuntur recusandae dolorum atque rem repellat maiores aut.</p>
+                   
+                    <div class="box sidebar-event-display-info flex-row">
+                        <div class="side-logo">
+                            <img src="static/img/sideLogo.avif" alt="">
+                        </div>
+                        <div class="sidebar-event-info">
+                            <p>Creating high-performance teams using LEGO® SERIOUS PLAY®</p>
+                            <p>Public group</p>
+                        </div>
+                       
+                    </div>
+                 
+                    <div class="box sidebar-event-time margin-top-sm">
+                        <p> <img src="static/img/clock.svg" alt="" class="sidebar-icon">Sunday, February 18, 2024 at 1:00 PM to Sunday, February 18, 2024 at 3:00 PM GMT</p>
+                        <p class="padding-top-sm">
+                            <img src="static/img/alternate-map-marker.svg" alt="" class="sidebar-icon">
+                            Pavilion Victoria Park, Old Ford Road, E97DE, · London
+                        </p>
+
+                    </div>
+
+                    <div class="box  margin-top-sm">
+                       <img src="static/img/staticmap.png" alt="">
+
+                    </div>
                 </div>
             </div>
            
-            <h1 class="related-card-title title">Members might interested in</h1>
+            <h1 class="padding-top-md">Members might interested in</h1>
             <div class="related-cards flex-row">
                 
                
@@ -243,7 +274,39 @@
 
 
 
+    <div class="attend-banner">
 
+        <div class="container flex-space-between padding-bottom-sm padding-top-sm">
+            <div class="attend-info">
+                <div class="time">
+                    SUN, FEB 11 · 3:30 PM GMT
+                </div>
+                <div class="attend-title bold">
+                    Free! | 4 vs 4 Football | King of the Court | London Church FC
+                </div>
+            </div>
+
+            <div class="attend-options">
+            
+                <button class="button-md free-btn">
+                    Free
+                </button>
+
+                 <div class="buttons">
+                    <button class="share-btn button-md font-sm">
+                        Share
+                    </button>
+
+                    <button class="attend-event-btn button-md font-sm">
+                        Attend
+                    </button>
+                 </div>
+
+
+            </div>
+        </div>
+        
+    </div>
     <footer>
         <div class="container padding-bottom-md">
 
