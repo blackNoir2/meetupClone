@@ -22,4 +22,5 @@ functionality.
 - This project was inspired by the functionality and design of [Meetup.com](https://www.meetup.com/).
 
 
-## You can view the site at this location
+## You can view my replication here at this location
+-  https://blacknoir2.github.io/meetupClone/
