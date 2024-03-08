@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/img/meetupLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Meetup Clone</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <nav class="nav-container flex-space-between">
+    
+                <div class="nav-header">
+                    <div class="nav-logo">
+                        <img src="./static/img/meetupLogo.png" alt="Meetup Logo" class="meetup-login-icon logo">
+                    </div>
+                    <form action="/" class="post">
+                        <input type="search" name="search-events" id="search-events" placeholder="search events.." required autofocus>
+                        <input type="search" name="search-location" id="search-location" placeholder="search location" required>
+                        <button type="submit" class="search-btn"><img src="static/img/search.svg" 
+                            alt="orm seach button" 
+                            class="form-search-icon">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="nav-body">
+                    <a class="start-a-new-group-discount">Start a new group - 30% off!</a>
+                </div>
+    
+                <div class="nav-footer">
+                    <div class="nav-links">
+
+                        <div class="flex-box-item flex-col">
+                            <img src="static/img/connections-7.svg" alt="" class="navbar-icon">
+                            <a href="#">Connections</a>
+                        </div>
+
+                        <div class="flex-box-item flex-col">
+                            <img src="static/img/messages.svg" alt="" class="navbar-icon">
+                            <a href="#">Messages</a>
+                        </div>
+
+                        <div class="flex-box-item flex-col">
+                            <img src="static/img/notificiations.svg" alt="" class="navbar-icon">
+                            <a href="#">Notifications</a>
+                        </div>
+
+                        <div class="flex-box-item flex-col">
+                            <img src="static/img/account-bold.svg" alt="" class="navbar-icon">
+                            <a href="#">Account</a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    
+    <main>
+
+
+        <section id="home-page">
+
+            <div class="container flex-row">
+
+
+                <div class="main1 flex-col">
+
+                    <div class="back">
+                        <a href="index.html"> <span><--</span> Back to home page</a>
+                    </div>
+                    <div class="menu flex-col">
+                        <a href="#">Attending</a>
+                        <a href="#">Hosting</a>
+                        <a href="#">Saved</a>
+                        <a href="#">Past</a>
+                    </div>
+
+                  <div class="calender">
+                    
+                  </div>
+                    
+                </div>
+
+
+                <div class="main2">
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+   
+    <footer class="margin-top-lg">
+        <div class="container padding-bottom-md">
+
+            <div class="head">
+                <a href="#">Create your own meetup group</a>
+                <a href="#">Meetup btn here</a>
+
+            </div>
+
+            <div class="body flex-space-between padding-top-sm">
+                <div class="your-account flex-col">
+                    <h3>Your account</h3>
+                    <a href="#">Sign up</a>
+                    <a href="#">Log in</a>
+                    <a href="#">Help</a>
+                    <a href="#">Become an affiliate</a>
+                </div>
+
+                <div class="discovery flex-col">
+                    <h3>Discover</h3>
+                    <a href="#">Groups</a>
+                    <a href="#">Calender</a>
+                    <a href="#">Topics</a>
+                    <a href="#">Cities</a>
+                    <a href="#">Online Event</a>
+                    <a href="#">Load Guides</a>
+                    <a href="#">Make Friends</a>
+
+                </div>
+
+                <div class="meetup flex-col">
+                    <h3>Meetup</h3>
+                    <a href="#">About</a>
+                    <a href="#">Meetup Pro</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Apps</a>
+                    <a href="#">Podcast</a>
+                  
+                </div>
+
+            </div>
+
+
+            <div class="footer padding-top-md">
+                <div class="follow-us flex-space-between">
+                    <div class="social">
+                        <a href="#"><img src="static/img/social-instagram.svg" alt=""></a>
+                        <a href="#"><img src="static/img/facebook.svg" alt=""></a>
+                        <a href="#"><img src="static/img/twitter-original.svg" alt=""></a>
+                        <a href="#"><img src="static/img/tik-tok.svg" alt=""></a>
+                    </div>
+
+                    <div class="find-us-here">
+                        <a href="#"><img src="static/img/appStore.svg" alt="" srcset=""></a>
+                       <a href="#"><img src="static/img/googlePlay.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-links padding-top-md">
+                    <a href="#" class="copyright-year">© 2024 Meetup</a>
+                    <a href="#" class="terms-of-condition-link">Terms of Service</a>
+                    <a href="#" class="privacy-policy-link">Privacy Policy</a>
+                    <a href="#" class="cookie-settings-link">Cookie Settings</a>
+                    <a href="#" class="cookie-policy-link">Cookie Policy</a>
+                    <a href="#" clas="help-link">Help</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+    <script src="static/js/calender.js" type="module"></script>
+</body>
+
+</html>

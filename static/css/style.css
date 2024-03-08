@@ -166,10 +166,32 @@ input[type=search] {
 
     /* sizes */
     height: 42px;
-    width: var(--width-sm);
+    width: 40%;
 }
 
 
+/* Table elements */
+th,
+td {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+th:hover,
+td:hover {
+    color: var(--ruby-pink);
+    font-weight: bolder;
+}
+
+td {
+    text-align: center;
+}
+
+.calender-month {
+    font-size: var(--font-size-md);
+}
 /* list structure elements */
 ul {
     line-height: 1.5;
@@ -355,6 +377,11 @@ img {
     justify-content: space-between;
 }
 
+.flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -365,7 +392,9 @@ img {
     flex-direction: row;
 }
 
-
+.flex-box-item  {
+    font-size: 12px;
+}
 
 /* The site logo  */
 .logo {
@@ -418,9 +447,16 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 19.2px;
+    gap: 10.2px;
 }
 
+.navbar-icon {
+    height: 30px;
+}
+/* when you log into your account and view the nav bar */
+.start-a-new-group-discount {
+    font-size: var(--font-size-xsm)!important;
+}
 
 /* Display */
 .box {
@@ -509,6 +545,7 @@ figcaption {
 #events .container,
 #event-details .container,
 #events h1,
+#home-page,
 #explore-top-categories,
 footer .container,
 .friendships .container,
@@ -1129,4 +1166,31 @@ label {
 .sidebar-icon  {
     height: 20px;
     padding-right: 10px;
+  }
+
+
+
+  /* The homepage when you log in  */
+  #home-page {
+    margin-top: 30px;
+  }
+
+
+  /* The calender */
+
+  #calender {
+    box-shadow: var(--box-shadow-secondary);
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    border: 3px solid lavender !important;
+    margin-top: 3px !important;
+    margin-top: 30px !important;
+    padding: 20px;
+  }
+
+  .current-date {
+    text-align: center;
+    border-radius: 50%;
+    background: blue;
+    color: white;
   }
