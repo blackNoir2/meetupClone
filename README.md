@@ -3,8 +3,9 @@
 ## Overview
 This is a Meetup clone that attempts to replicate the original meetup a web application designed to facilitate organizing and attending events within communities. 
 This clone has none of the functionality of the original like allowing users to create, browse, and join events based on their interests and location.
-This clone aims to replicate the core functionalities of the popular Meetup platform.
-e Design:** The application is designed to be accessible on various devices and screen sizes.
+This clone only aims to replicate visual aspect of the popular Meetup platform not the core
+functionality.
+
 
 ## Technologies Used
 - **Frontend:** HTML, CSS,
