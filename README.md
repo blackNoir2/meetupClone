@@ -9,7 +9,7 @@ functionality.
 
 ## Technologies Used
 - **Frontend:** HTML, CSS,
--
+
 ## Known Issues to be fixed
 - **Screen Reader Compatibility:** This application is not currently optimized for screen readers.
 - Users with visual impairments may encounter difficulties in navigating and interacting with the interface. Efforts are ongoing to improve accessibility.
